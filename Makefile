@@ -27,8 +27,8 @@ clean:
 
 frontend-install:
 	# Install the required node packages
-    cd frontend/my-app && npm install
+	cd frontend/my-app && npm install
 
 frontend-run:
 	# Start the React frontend server
-    cd frontend/my-app && npm start
+	cd frontend/my-app && npm start
