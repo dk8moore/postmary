@@ -30,6 +30,13 @@ This project is a boilerplate for building SaaS applications with Django.
     Create a `.env` file in the project root and add the necessary environment variables (e.g., database credentials, secret keys).
     A typical `.env` file would look like this:
     ```json
+    DEBUG=True
+    SECRET_KEY='blablabla'
+    DATABASE_NAME='dbname'
+    DATABASE_USER='username'
+    DATABASE_PASSWORD='userpassword'
+    DATABASE_HOST='localhost'
+    DATABASE_PORT=5432
     ```
 
 5. **Run migrations**:
