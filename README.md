@@ -1,12 +1,13 @@
 # Django SaaS Boilerplate
 
-This project is a boilerplate for building SaaS applications with Django and React.
+This project is a boilerplate for building SaaS applications with Django and React, featuring real-time notifications using Django Channels and WebSockets.
 
 ## Requirements
 
 - Python 3.10 or higher
 - PostgreSQL
 - Node.js and npm (for React frontend)
+- Redis (for real-time communication)
 
 ## Setup
 
@@ -61,3 +62,13 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 - **Run migrations**: `make migrate`
 - **Start the backend server**: `make run`
 - **Start the frontend server**: `make frontend-run`
+
+
+## Features
+
+- **User Authentication and Authorization**: JWT-based authentication.
+- **CRUD Operations**: Basic CRUD operations for managing user data.
+- **Real-time Notifications**: Uses Django Channels and WebSockets for real-time communication.
+- **Database Integration**: PostgreSQL for data storage.
+- **Frontend**: React application setup for dynamic user interfaces.
+<!-- - **Deployment**: Docker configuration for easy deployment. -->
