@@ -5,13 +5,15 @@ import Users from './users';
 import Notifications from './notifications';
 
 const App = () => {
+    const isAuthenticated = true;
+
     return (
         <Router>
             <div>
                 <Routes>
-                    <Route path="/login" component={Login} />
-                    <Route path="/users" component={Users} />
-                    <Route path="/notifications" component={Notifications} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/users" element={<Users isAuthenticated={isAuthenticated} />} />
+                    <Route path="/notifications" element={<Notifications />} />
                 </Routes>
             </div>
         </Router>
