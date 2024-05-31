@@ -1,6 +1,7 @@
 from rest_framework import generics
 from .models import User
 from .serializers import UserSerializer
+import json
 
 import stripe
 from django.conf import settings
@@ -9,7 +10,10 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
 from django.shortcuts import render, redirect
-from django.contrib.auth import logout as auth_logout
+from django.contrib.auth import login as auth_login, logout as auth_logout
+from django.contrib.auth import authenticate  
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.views import PasswordResetView
 
 # View for user list and creation
 class UserListCreate(generics.ListCreateAPIView):
@@ -48,10 +52,26 @@ class CreateCheckoutSessionView(generics.GenericAPIView):
                 'error': str(e)
             })
         
+@csrf_exempt
 def login(request):
-    return render(request, 'boilerplate/login.html')
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        username = data['username']
+        password = data['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            auth_login(request, user)
+            return JsonResponse({'success': True})
+        else:
+            return JsonResponse({'success': False, 'error': 'Invalid credentials'}, status=400)
+    else:
+        form = AuthenticationForm()
+        return render(request, 'login.html', {'form': form})
 
 def logout(request):
     auth_logout(request)
     return redirect('/')
+
+class CustomPasswordResetView(PasswordResetView):
+    template_name = 'password_reset.html'
 
