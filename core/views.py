@@ -8,6 +8,9 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
+from django.shortcuts import render, redirect
+from django.contrib.auth import logout as auth_logout
+
 # View for user list and creation
 class UserListCreate(generics.ListCreateAPIView):
     queryset = User.objects.all()
@@ -44,4 +47,11 @@ class CreateCheckoutSessionView(generics.GenericAPIView):
             return JsonResponse({
                 'error': str(e)
             })
+        
+def login(request):
+    return render(request, 'boilerplate/login.html')
+
+def logout(request):
+    auth_logout(request)
+    return redirect('/')
 
