@@ -40,7 +40,6 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     DATABASE_HOST='localhost'
     DATABASE_PORT=5432
     STRIPE_SECRET_KEY = 'your-secret-key'
-    STRIPE_PUBLISHABLE_KEY = 'your-publishable-key'
     ```
 
 5. **Run backend migrations**:
@@ -73,4 +72,5 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 - **Real-time Notifications**: Uses Django Channels and WebSockets for real-time communication.
 - **Database Integration**: PostgreSQL for data storage.
 - **Frontend**: React application setup for dynamic user interfaces.
+- **Payment Integration**: Stripe integration for payment processing.
 <!-- - **Deployment**: Docker configuration for easy deployment. -->
