@@ -6,7 +6,7 @@ const Notifications = () => {
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
-        const ws = new WebSocket('ws://localhost:8000/ws/notifications/');
+        const ws = new WebSocket(process.env.REACT_APP_WS_URL + '/ws/notifications/');
         ws.onmessage = (e) => {
             const data = JSON.parse(e.data);
             setNotifications((prevNotifications) => [...prevNotifications, data.notification]);

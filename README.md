@@ -39,6 +39,8 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     DATABASE_PASSWORD='userpassword'
     DATABASE_HOST='localhost'
     DATABASE_PORT=5432
+    STRIPE_SECRET_KEY = 'your-secret-key'
+    STRIPE_PUBLISHABLE_KEY = 'your-publishable-key'
     ```
 
 5. **Run backend migrations**:

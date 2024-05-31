@@ -144,6 +144,8 @@ REST_FRAMEWORK = {
     ),
 }
 
+# Redis
+
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
@@ -152,3 +154,8 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+# Stripe
+
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY')
