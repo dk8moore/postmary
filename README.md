@@ -63,7 +63,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 - **Run migrations**: `make migrate`
 - **Start the backend server**: `make run`
 - **Start the frontend server**: `make frontend-run`
-
+- **Create superuser for Django admin panel**: `make createsu`
 
 ## Features
 

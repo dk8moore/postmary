@@ -13,6 +13,10 @@ migrate:
 	python manage.py makemigrations
 	python manage.py migrate
 
+createsu:
+	# Create Django admin superuser
+	python manage.py createsuperuser
+
 run:
 	# Start the Django development server
 	python manage.py runserver
