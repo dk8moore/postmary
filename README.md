@@ -26,7 +26,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 3. **Install all dependencies (backend and frontend)**:
     ```bash
     make install
-    make frontend-install
+    make fe-install
     ```
 
 4. **Set up environment variables**:
@@ -54,7 +54,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     ```
     In the second terminal, start the frontend server:
     ```bash
-    make frontend-run
+    make fe-run
     ```
 
 ## Usage
@@ -62,7 +62,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 - **Clean project**: `make clean`
 - **Run migrations**: `make migrate`
 - **Start the backend server**: `make run`
-- **Start the frontend server**: `make frontend-run`
+- **Start the frontend server**: `make fe-run`
 - **Create superuser for Django admin panel**: `make createsu`
 
 ## Features

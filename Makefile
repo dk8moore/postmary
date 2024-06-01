@@ -29,10 +29,10 @@ clean:
 
 # Frontend setup
 
-frontend-install:
+fe-install:
 	# Install the required node packages
 	cd frontend/boilerplate && npm install
 
-frontend-run:
+fe-run:
 	# Start the React frontend server
 	cd frontend/boilerplate && npm start
