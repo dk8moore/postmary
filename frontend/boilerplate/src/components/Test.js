@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/Login';
-import Users from './users';
-import Notifications from './notifications';
-import Checkout from './checkout';
-import Success from './success';
-import Cancel from './cancel';
+import Login from './Login';
+import Users from './Users';
+import Notifications from './Notifications';
+import Checkout from './payments/Checkout';
+import Success from './payments/Success';
+import Cancel from './payments/Cancel';
 
 import './styles.css'
 
-const App = () => {
+const Test = () => {
     const isAuthenticated = true;
 
     return (
@@ -28,4 +28,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Test;
