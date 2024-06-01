@@ -1,48 +1,71 @@
-
 import React from 'react';
+import { Container, Typography, Box, Grid, Card, CardContent, Button } from '@mui/material';
 
 function Pricing() {
   return (
-    <section id="pricing" className="pricing">
-      <div className="container">
-        <h2>Pricing</h2>
-        <div className="pricing-table">
-          <div className="pricing-plan">
-            <h3>Basic</h3>
-            <p>$10/month</p>
-            <ul>
-              <li>Feature A</li>
-              <li>Feature B</li>
-              <li>Feature C</li>
-            </ul>
-            <button className="cta-button">Get Started</button>
-          </div>
-          <div className="pricing-plan">
-            <h3>Pro</h3>
-            <p>$30/month</p>
-            <ul>
-              <li>Feature A</li>
-              <li>Feature B</li>
-              <li>Feature C</li>
-              <li>Feature D</li>
-            </ul>
-            <button className="cta-button">Get Started</button>
-          </div>
-          <div className="pricing-plan">
-            <h3>Enterprise</h3>
-            <p>$100/month</p>
-            <ul>
-              <li>Feature A</li>
-              <li>Feature B</li>
-              <li>Feature C</li>
-              <li>Feature D</li>
-              <li>Feature E</li>
-            </ul>
-            <button className="cta-button">Get Started</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Box sx={{ py: 8 }}>
+      <Container>
+        <Typography variant="h4" component="h2" gutterBottom>
+          Pricing
+        </Typography>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" component="h3">
+                  Basic
+                </Typography>
+                <Typography variant="h4">
+                  $10/month
+                </Typography>
+                <Typography variant="body1">
+                  Feature A, Feature B, Feature C
+                </Typography>
+                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+                  Get Started
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" component="h3">
+                  Pro
+                </Typography>
+                <Typography variant="h4">
+                  $30/month
+                </Typography>
+                <Typography variant="body1">
+                  Feature A, Feature B, Feature C, Feature D
+                </Typography>
+                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+                  Get Started
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" component="h3">
+                  Enterprise
+                </Typography>
+                <Typography variant="h4">
+                  $100/month
+                </Typography>
+                <Typography variant="body1">
+                  Feature A, Feature B, Feature C, Feature D, Feature E
+                </Typography>
+                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+                  Get Started
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
   );
 }
 

@@ -1,27 +1,53 @@
-
 import React from 'react';
+import { Container, Typography, Box, Grid, Card, CardContent } from '@mui/material';
 
 function SocialProof() {
   return (
-    <section className="social-proof">
-      <div className="container">
-        <h2>What Our Customers Say</h2>
-        <div className="testimonials">
-          <div className="testimonial">
-            <p>"This is the best SaaS ever!"</p>
-            <h4>- Happy Customer</h4>
-          </div>
-          <div className="testimonial">
-            <p>"Incredible service and support."</p>
-            <h4>- Satisfied User</h4>
-          </div>
-          <div className="testimonial">
-            <p>"I can't imagine my business without it."</p>
-            <h4>- Loyal Client</h4>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Box sx={{ py: 8, bgcolor: '#fff' }}>
+      <Container>
+        <Typography variant="h4" component="h2" gutterBottom>
+          What Our Customers Say
+        </Typography>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="body1">
+                  "This is the best SaaS ever!"
+                </Typography>
+                <Typography variant="subtitle2" align="right">
+                  - Happy Customer
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="body1">
+                  "Incredible service and support."
+                </Typography>
+                <Typography variant="subtitle2" align="right">
+                  - Satisfied User
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="body1">
+                  "I can't imagine my business without it."
+                </Typography>
+                <Typography variant="subtitle2" align="right">
+                  - Loyal Client
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
   );
 }
 

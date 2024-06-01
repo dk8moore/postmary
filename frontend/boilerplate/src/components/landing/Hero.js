@@ -1,16 +1,22 @@
 
 import React from 'react';
+import { Container, Typography, Button, Box } from '@mui/material';
 
 function Hero() {
-    console.log("Test Hero");
   return (
-    <section className="hero">
-      <div className="container">
-        <h1>Your SaaS Headline</h1>
-        <p>Your subheadline explaining the SaaS</p>
-        <button className="cta-button">Get Started</button>
-      </div>
-    </section>
+    <Box sx={{ bgcolor: '#007BFF', color: '#fff', py: 8, textAlign: 'center' }}>
+      <Container>
+        <Typography variant="h2" component="h1" gutterBottom>
+          Your SaaS Headline
+        </Typography>
+        <Typography variant="h5" component="p" gutterBottom>
+          Your subheadline explaining the SaaS
+        </Typography>
+        <Button variant="contained" color="primary" size="large">
+          Get Started
+        </Button>
+      </Container>
+    </Box>
   );
 }
 

@@ -1,23 +1,27 @@
 
 import React from 'react';
+import { Container, Typography, Box, Link } from '@mui/material';
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-links">
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div className="social-links">
-          <a href="https://twitter.com">Twitter</a>
-          <a href="https://facebook.com">Facebook</a>
-          <a href="https://linkedin.com">LinkedIn</a>
-        </div>
-        <p>&copy; 2024 My SaaS. All rights reserved.</p>
-      </div>
-    </footer>
+    <Box sx={{ bgcolor: '#333', color: '#fff', py: 4 }}>
+      <Container>
+        <Typography variant="body1" align="center">
+          <Link href="#features" color="inherit" underline="hover" sx={{ mx: 2 }}>
+            Features
+          </Link>
+          <Link href="#pricing" color="inherit" underline="hover" sx={{ mx: 2 }}>
+            Pricing
+          </Link>
+          <Link href="#contact" color="inherit" underline="hover" sx={{ mx: 2 }}>
+            Contact
+          </Link>
+        </Typography>
+        <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+          &copy; 2023 My SaaS. All rights reserved.
+        </Typography>
+      </Container>
+    </Box>
   );
 }
 

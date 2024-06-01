@@ -1,14 +1,18 @@
-
 import React from 'react';
+import { Container, Typography, Box } from '@mui/material';
 
 function Template() {
   return (
-    <section className="custom-section">
-      <div className="container">
-        <h2>Custom Section</h2>
-        <p>This section can be customized to fit your specific needs.</p>
-      </div>
-    </section>
+    <Box sx={{ py: 8, bgcolor: '#f8f8f8' }}>
+      <Container>
+        <Typography variant="h4" component="h2" gutterBottom>
+          Custom Section
+        </Typography>
+        <Typography variant="body1">
+          This section can be customized to fit your specific needs. You can add any content here, such as additional features, use cases, blog posts, or other information.
+        </Typography>
+      </Container>
+    </Box>
   );
 }
 
