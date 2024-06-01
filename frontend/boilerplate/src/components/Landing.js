@@ -8,14 +8,14 @@ import Pricing from './landing/Pricing';
 import CTA from './landing/CTA';
 import Footer from './landing/Footer';
 
-function App() {
+function LandingPage() {
   return (
     <div>
       <Header />
       <Hero />
       <Features />
       <SocialProof />
-      <Template />
+      {/* <Template /> */}
       <Pricing />
       <CTA />
       <Footer />
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingPage;
