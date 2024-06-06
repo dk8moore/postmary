@@ -14,9 +14,9 @@ function LandingPage() {
       <Header />
       <Hero />
       <Features />
-      <SocialProof />
       {/* <Template /> */}
       <Pricing />
+      <SocialProof />
       <CTA />
       <Footer />
     </div>
