@@ -1,68 +1,83 @@
 import React from 'react';
-import { Container, Typography, Box, Grid, Card, CardContent, Button } from '@mui/material';
+import { Container, Typography, Box, Grid } from '@mui/material';
+import { CsToggleButton, CsToggleButtonGroup, PricingPlan } from '../customComponents';
+import '../styles.css';
 
 function Pricing() {
+  const [plan, setPlan] = React.useState('/mo');
+
+  const plans = [
+    {
+      title: 'Basic',
+      subtitle: 'Ideal for individuals',
+      price: 9,
+      discount: 15,
+      features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
+      buttonLabel: 'Get Started',
+      highlight: false,
+    },
+    {
+      title: 'Standard',
+      subtitle: 'Perfect for small teams',
+      price: 89,
+      discount: 20,
+      features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
+      buttonLabel: 'Get Started',
+      highlight: true,
+    },
+    {
+      title: 'Premium',
+      subtitle: 'Best for large teams',
+      price: 139,
+      discount: 25,
+      features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
+      buttonLabel: 'Get Started',
+      highlight: false,
+    },
+  ];
+
+  const handlePlanChange = (event, newPlan) => {
+    if (newPlan !== null) {
+      setPlan(newPlan);
+    }
+  };
+
   return (
-    <Box sx={{ py: 8 }}>
-      <Container>
-        <Typography variant="h4" component="h2" gutterBottom>
-          Pricing
+    <Box className="dotted-background">
+      <Container className="container">
+        <Typography variant="h4b" component="h1" gutterBottom className="pricing-title">
+          Transparent Pricing for All
         </Typography>
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="h6" component="h3">
-                  Basic
-                </Typography>
-                <Typography variant="h4">
-                  $10/month
-                </Typography>
-                <Typography variant="body1">
-                  Feature A, Feature B, Feature C
-                </Typography>
-                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-                  Get Started
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="h6" component="h3">
-                  Pro
-                </Typography>
-                <Typography variant="h4">
-                  $30/month
-                </Typography>
-                <Typography variant="body1">
-                  Feature A, Feature B, Feature C, Feature D
-                </Typography>
-                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-                  Get Started
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="h6" component="h3">
-                  Enterprise
-                </Typography>
-                <Typography variant="h4">
-                  $100/month
-                </Typography>
-                <Typography variant="body1">
-                  Feature A, Feature B, Feature C, Feature D, Feature E
-                </Typography>
-                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-                  Get Started
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
+        <Typography
+          variant="subtitle1"
+          gutterBottom
+          className="pricing-subtitle"
+          sx={{ color: 'text.secondary', mb: 3 }}
+        >
+          More than 100,000 entrepreneurs have created their companies quickly with Earney.
+        </Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
+          <CsToggleButtonGroup
+            value={plan}
+            exclusive
+            onChange={handlePlanChange}
+            aria-label="plan selection"
+            sx={{ mx: 1 }}
+          >
+            <CsToggleButton value="/mo" aria-label="monthly" disableRipple>
+              Monthly
+            </CsToggleButton>
+            <CsToggleButton value="/yr" aria-label="yearly" disableRipple>
+              Yearly
+            </CsToggleButton>
+          </CsToggleButtonGroup>
+        </Box>
+        <Grid container spacing={3} justifyContent="center" alignItems="flex-end">
+          {plans.map((planDetails, index) => (
+            <Grid item key={index}>
+              <PricingPlan {...planDetails} period={plan} />
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </Box>
