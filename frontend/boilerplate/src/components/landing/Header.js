@@ -1,23 +1,64 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
+import React, { useState } from 'react';
+import { AppBar, Toolbar, Typography, Button, Container, IconButton, Drawer, List, ListItem, ListItemText, useMediaQuery } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import { useTheme } from '@mui/material/styles';
 
-function Header() {   
+function Header() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = (open) => () => {
+    setDrawerOpen(open);
+  };
+
+  const menuItems = (
+    <>
+      <Button color="inherit" href="#features">Features</Button>
+      <Button color="inherit" href="#pricing">Pricing</Button>
+      <Button color="inherit" href="#contact">Contact</Button>
+      <Button color="primary" variant="contained">Login</Button>
+    </>
+  );
+
   return (
-    <AppBar position="static" color="default" className="tw-bg-white tw-shadow-md">
-      <Container>
-        <Toolbar className="tw-flex tw-justify-between">
-          <Typography variant="h6" className="tw-flex-grow">
-            My SaaS
-          </Typography>
-          <div className="tw-flex tw-space-x-4">
-            <Button color="inherit" href="#features">Features</Button>
-            <Button color="inherit" href="#pricing">Pricing</Button>
-            <Button color="inherit" href="#contact">Contact</Button>
-            <Button color="primary" variant="contained" className="tw-bg-blue-500 tw-text-white">Login</Button>
-          </div>
-        </Toolbar>
-      </Container>
-    </AppBar>
+    <>
+      <AppBar position="fixed" color="default">
+        <Container>
+          <Toolbar>
+            <Typography variant="h6" style={{ flexGrow: 1 }}>
+              My SaaS
+            </Typography>
+            {isSmallScreen ? (
+              <>
+                <IconButton edge="end" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
+                  <MenuIcon />
+                </IconButton>
+                <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+                  <List>
+                    <ListItem button component="a" href="#features">
+                      <ListItemText primary="Features" />
+                    </ListItem>
+                    <ListItem button component="a" href="#pricing">
+                      <ListItemText primary="Pricing" />
+                    </ListItem>
+                    <ListItem button component="a" href="#contact">
+                      <ListItemText primary="Contact" />
+                    </ListItem>
+                    <ListItem button component="a" href="#login">
+                      <ListItemText primary="Login" />
+                    </ListItem>
+                  </List>
+                </Drawer>
+              </>
+            ) : (
+              menuItems
+            )}
+          </Toolbar>
+        </Container>
+      </AppBar>
+      <Toolbar /> {/* This is to account for the fixed AppBar */}
+    </>
   );
 }
 
