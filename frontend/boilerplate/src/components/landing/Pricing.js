@@ -44,25 +44,24 @@ function Pricing() {
 
   return (
     <Box className="dotted-background">
-      <Container className="container">
-        <Typography variant="h4b" component="h1" gutterBottom className="pricing-title">
+      <Container className="tw-container tw-mx-auto tw-py-8">
+        <Typography variant="h4" component="h1" gutterBottom className="tw-text-center tw-font-bold">
           Transparent Pricing for All
         </Typography>
         <Typography
           variant="subtitle1"
           gutterBottom
-          className="pricing-subtitle"
-          sx={{ color: 'text.secondary', mb: 3 }}
+          className="tw-text-center tw-text-gray-500 tw-mb-3"
         >
           More than 100,000 entrepreneurs have created their companies quickly with Earney.
         </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
+        <Box className="tw-flex tw-justify-center tw-mb-4">
           <CsToggleButtonGroup
             value={plan}
             exclusive
             onChange={handlePlanChange}
             aria-label="plan selection"
-            sx={{ mx: 1 }}
+            className="tw-mx-1"
           >
             <CsToggleButton value="/mo" aria-label="monthly" disableRipple>
               Monthly

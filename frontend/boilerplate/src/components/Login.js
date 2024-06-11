@@ -26,37 +26,41 @@ const Login = () => {
     };
 
     return (
-        <div className="login-container">
-            <h2>Login</h2>
-            {error && <div className="error">{error}</div>}
-            <form onSubmit={handleSubmit}>
-                <div className="input-group">
-                    <label htmlFor="email">Email:</label>
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-min-h-screen tw-bg-gray-100">
+            <h2 className="tw-text-3xl tw-font-bold">Login</h2>
+            {error && <div className="tw-text-red-500 tw-mb-4">{error}</div>}
+            <form onSubmit={handleSubmit} className="tw-bg-white tw-p-6 tw-rounded-lg tw-shadow-lg tw-w-full tw-max-w-sm">
+                <div className="tw-mb-4">
+                    <label htmlFor="email" className="tw-block tw-text-gray-700">Email:</label>
                     <input
                         type="email"
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        className="tw-w-full tw-px-3 tw-py-2 tw-border tw-rounded"
                     />
                 </div>
-                <div className="input-group">
-                    <label htmlFor="password">Password:</label>
+                <div className="tw-mb-4">
+                    <label htmlFor="password" className="tw-block tw-text-gray-700">Password:</label>
                     <input
                         type="password"
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        className="tw-w-full tw-px-3 tw-py-2 tw-border tw-rounded"
                     />
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" className="tw-w-full tw-bg-blue-500 tw-text-white tw-py-2 tw-rounded">
+                    Login
+                </button>
             </form>
-            <div className="links">
-                <a href="/password-reset">Forgot password?</a>
-                <a href="/signup">Sign up</a>
+            <div className="tw-mt-4">
+                <a href="/password-reset" className="tw-text-blue-500 tw-mr-4">Forgot password?</a>
+                <a href="/signup" className="tw-text-blue-500">Sign up</a>
             </div>
-            <div className="social-auth">
-                <a href="/auth/login/google-oauth2/" className="google">Login with Google</a>
-                <a href="/auth/login/facebook/" className="facebook">Login with Facebook</a>
+            <div className="tw-mt-4">
+                <a href="/auth/login/google-oauth2/" className="tw-block tw-bg-red-500 tw-text-white tw-py-2 tw-px-4 tw-mb-2 tw-rounded">Login with Google</a>
+                <a href="/auth/login/facebook/" className="tw-block tw-bg-blue-700 tw-text-white tw-py-2 tw-px-4 tw-rounded">Login with Facebook</a>
             </div>
         </div>
     );

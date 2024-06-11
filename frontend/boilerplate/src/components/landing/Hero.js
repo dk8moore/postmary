@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Container, Typography, Button, Box } from '@mui/material';
 
 function Hero() {
   return (
-    <Box sx={{ bgcolor: '#007BFF', color: '#fff', py: 8, textAlign: 'center' }}>
+    <Box className="tw-bg-blue-500 tw-text-white tw-py-8 tw-text-center">
       <Container>
         <Typography variant="h2" component="h1" gutterBottom>
           Your SaaS Headline

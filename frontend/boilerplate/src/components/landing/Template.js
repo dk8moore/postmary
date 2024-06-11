@@ -3,7 +3,7 @@ import { Container, Typography, Box } from '@mui/material';
 
 function Template() {
   return (
-    <Box sx={{ py: 8, bgcolor: '#f8f8f8' }}>
+    <Box className="tw-py-8 tw-bg-gray-100">
       <Container>
         <Typography variant="h4" component="h2" gutterBottom>
           Custom Section

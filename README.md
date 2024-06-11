@@ -8,6 +8,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 - PostgreSQL
 - Node.js and npm (for React frontend)
 - Redis (for real-time communication)
+- Tailwind CSS (for styling the React frontend)
 
 ## Setup
 
@@ -28,6 +29,8 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     make install
     make fe-install
     ```
+    
+    *If Tailwind CSS is not already set up in your project, you can add it by following the official [Tailwind CSS installation guide](https://tailwindcss.com/docs/installation).*
 
 4. **Set up environment variables**:
     Create a `.env` file in the project root and add the necessary environment variables (e.g., database credentials, secret keys). A typical `.env` file would look like this:
@@ -71,6 +74,6 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 - **CRUD Operations**: Basic CRUD operations for managing user data.
 - **Real-time Notifications**: Uses Django Channels and WebSockets for real-time communication.
 - **Database Integration**: PostgreSQL for data storage.
-- **Frontend**: React application setup for dynamic user interfaces.
+- **Frontend**: React application setup for dynamic user interfaces, styled with Tailwind CSS.
 - **Payment Integration**: Stripe integration for payment processing.
 <!-- - **Deployment**: Docker configuration for easy deployment. -->

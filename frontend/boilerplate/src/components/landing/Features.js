@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Container, Typography, Box, Grid } from '@mui/material';
 
 function Features() {
   return (
-    <Box sx={{ py: 8, bgcolor: '#f8f8f8' }}>
+    <Box className="tw-py-8 tw-bg-gray-100">
       <Container>
         <Typography variant="h4" component="h2" gutterBottom>
           Features
@@ -12,7 +11,7 @@ function Features() {
         <Grid container spacing={4}>
           <Grid item xs={12} sm={4}>
             <Box textAlign="center">
-              <img src="/path/to/icon1.png" alt="Feature 1" style={{ maxWidth: '100px' }} />
+              <img src="/path/to/icon1.png" alt="Feature 1" className="tw-max-w-full tw-h-auto tw-mx-auto" />
               <Typography variant="h6" component="h3">
                 Feature 1
               </Typography>
@@ -23,7 +22,7 @@ function Features() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Box textAlign="center">
-              <img src="/path/to/icon2.png" alt="Feature 2" style={{ maxWidth: '100px' }} />
+              <img src="/path/to/icon2.png" alt="Feature 2" className="tw-max-w-full tw-h-auto tw-mx-auto" />
               <Typography variant="h6" component="h3">
                 Feature 2
               </Typography>
@@ -34,7 +33,7 @@ function Features() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Box textAlign="center">
-              <img src="/path/to/icon3.png" alt="Feature 3" style={{ maxWidth: '100px' }} />
+              <img src="/path/to/icon3.png" alt="Feature 3" className="tw-max-w-full tw-h-auto tw-mx-auto" />
               <Typography variant="h6" component="h3">
                 Feature 3
               </Typography>

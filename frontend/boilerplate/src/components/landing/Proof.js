@@ -3,7 +3,7 @@ import { Container, Typography, Box, Grid, Card, CardContent } from '@mui/materi
 
 function SocialProof() {
   return (
-    <Box sx={{ py: 8, bgcolor: '#fff' }}>
+    <Box className="tw-py-8 tw-bg-white">
       <Container>
         <Typography variant="h4" component="h2" gutterBottom>
           What Our Customers Say
