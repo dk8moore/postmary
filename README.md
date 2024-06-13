@@ -6,7 +6,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 
 - Python 3.10 or higher
 - PostgreSQL
-- Node.js and npm (for React frontend)
+- Node.js (v14.x or higher) and npm (v6.x or higher)
 - Redis (for real-time communication)
 - Tailwind CSS (for styling the React frontend)
 
@@ -32,6 +32,23 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     
     *If Tailwind CSS is not already set up in your project, you can add it by following the official [Tailwind CSS installation guide](https://tailwindcss.com/docs/installation).*
 
+    *Ensure TypeScript is set up correctly*:
+    Make sure the `tsconfig.json` file is present in the frontend root (`frontend/boilerplate/tsconfig.json`) with the following content:
+    ```json
+    {
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "es2015"],
+        "jsx": "react",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src/**/*"]
+    }
+
 4. **Set up environment variables**:
     Create a `.env` file in the project root and add the necessary environment variables (e.g., database credentials, secret keys). A typical `.env` file would look like this:
     ```bash
@@ -43,6 +60,13 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     DATABASE_HOST='localhost'
     DATABASE_PORT=5432
     STRIPE_SECRET_KEY = 'your-secret-key'
+    ```
+
+    Create a `.env` file in the frontend root (`frontend/boilerplate/.env`) and add the necessary environment variables. A typical `.env` file would look like this:
+    ```bash
+    REACT_APP_STRIPE_PUBLISHABLE_KEY='your-publishable-key'
+    REACT_APP_API_URL='http://localhost:8000'
+    REACT_APP_WS_URL='ws://localhost:8000'
     ```
 
 5. **Run backend migrations**:
