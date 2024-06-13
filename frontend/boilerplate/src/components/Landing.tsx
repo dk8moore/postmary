@@ -8,7 +8,7 @@ import Pricing from './landing/Pricing';
 import CTA from './landing/CTA';
 import Footer from './landing/Footer';
 
-function LandingPage() {
+const LandingPage: React.FC = () => {
   return (
     <div>
       <Header />

@@ -1,17 +1,17 @@
-// Checkout.js
+/// <reference types="node" />
 import React, { useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 import axios from 'axios';
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY!);
 
-const CheckoutForm = () => {
+const CheckoutForm: React.FC = () => {
     const stripe = useStripe();
     const elements = useElements();
-    const [errorMessage, setErrorMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState<string>('');
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         if (!stripe || !elements) {
@@ -21,11 +21,11 @@ const CheckoutForm = () => {
 
         const { error, paymentMethod } = await stripe.createPaymentMethod({
             type: 'card',
-            card: elements.getElement(CardElement),
+            card: elements.getElement(CardElement)!,
         });
 
         if (error) {
-            setErrorMessage(error.message);
+            setErrorMessage(error.message || 'An error occurred');
             return;
         }
 
@@ -40,10 +40,10 @@ const CheckoutForm = () => {
                 const { id: sessionId } = response.data;
                 const { error: stripeError } = await stripe.redirectToCheckout({ sessionId });
                 if (stripeError) {
-                    setErrorMessage(stripeError.message);
+                    setErrorMessage(stripeError.message || 'An error occurred');
                 }
             }
-        } catch (error) {
+        } catch (error: any) {
             setErrorMessage(error.message);
         }
     };
@@ -57,7 +57,7 @@ const CheckoutForm = () => {
     );
 };
 
-const Checkout = () => (
+const Checkout: React.FC = () => (
     <Elements stripe={stripePromise}>
         <CheckoutForm />
     </Elements>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Link } from '@mui/material';
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <Box className="tw-bg-gray-800 tw-text-white tw-py-4">
       <Container>

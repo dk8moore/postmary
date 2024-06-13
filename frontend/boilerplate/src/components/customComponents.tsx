@@ -1,3 +1,4 @@
+import React from 'react';
 import { styled } from '@mui/system';
 import { ToggleButton, ToggleButtonGroup } from '@mui/lab';
 import { Card, CardContent, Typography, Button, Chip, Box } from '@mui/material';
@@ -43,8 +44,20 @@ export const CsToggleButton = styled(ToggleButton)(({ theme }) => ({
   },
 }));
 
+// Define the props for PricingPlan
+interface PricingPlanProps {
+  title: string;
+  subtitle: string;
+  price: number;
+  discount: number;
+  features: string[];
+  buttonLabel: string;
+  highlight: boolean;
+  period: string;
+}
+
 // PricingPlan component
-export const PricingPlan = ({
+export const PricingPlan: React.FC<PricingPlanProps> = ({
   title,
   subtitle,
   price,
@@ -104,7 +117,7 @@ export const PricingPlan = ({
           <Typography variant="h5" component="h3" className="pricing-plan-title" sx={{ fontWeight: 'bold' }}>
             {title}
           </Typography>
-          <Typography variant="body" className="pricing-plan-subtitle" sx={{ color: 'secondary.main' }}>
+          <Typography variant="body1" className="pricing-plan-subtitle" sx={{ color: 'secondary.main' }}>
             {subtitle}
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>

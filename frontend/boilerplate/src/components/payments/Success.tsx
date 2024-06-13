@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Success = () => {
+const Success: React.FC = () => {
     return (
         <div>
             <h2>Payment Successful!</h2>

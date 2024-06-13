@@ -1,14 +1,19 @@
+/// <reference types="node" />
 import React, { useEffect, useState } from 'react';
 
-const Notifications = () => {
-    const [notifications, setNotifications] = useState([]);
-    const [message, setMessage] = useState('');
-    const [socket, setSocket] = useState(null);
+interface Notification {
+    notification: string;
+}
+
+const Notifications: React.FC = () => {
+    const [notifications, setNotifications] = useState<string[]>([]);
+    const [message, setMessage] = useState<string>('');
+    const [socket, setSocket] = useState<WebSocket | null>(null);
 
     useEffect(() => {
         const ws = new WebSocket(process.env.REACT_APP_WS_URL + '/ws/notifications/');
         ws.onmessage = (e) => {
-            const data = JSON.parse(e.data);
+            const data: Notification = JSON.parse(e.data);
             setNotifications((prevNotifications) => [...prevNotifications, data.notification]);
         };
         setSocket(ws);

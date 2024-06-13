@@ -2,8 +2,17 @@ import React, { useEffect, useState } from 'react';
 import api from '../api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Users = () => {
-    const [users, setUsers] = useState([]);
+interface User {
+    id: number;
+    username: string;
+}
+
+interface UsersProps {
+    isAuthenticated: boolean;
+}
+
+const Users: React.FC<UsersProps> = ({ isAuthenticated }) => {
+    const [users, setUsers] = useState<User[]>([]);
 
     useEffect(() => {
         const fetchUsers = async () => {
@@ -20,8 +29,10 @@ const Users = () => {
             }
         };
 
-        fetchUsers();
-    }, []);
+        if (isAuthenticated) {
+            fetchUsers();
+        }
+    }, [isAuthenticated]);
 
     return (
         <div className="container mt-5">

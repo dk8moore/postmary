@@ -3,12 +3,12 @@ import { AppBar, Toolbar, Typography, Button, Container, IconButton, Drawer, Lis
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
 
-function Header() {
+const Header: React.FC = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const toggleDrawer = (open) => () => {
+  const toggleDrawer = (open: boolean) => () => {
     setDrawerOpen(open);
   };
 

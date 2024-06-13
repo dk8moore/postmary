@@ -3,10 +3,20 @@ import { Container, Typography, Box, Grid } from '@mui/material';
 import { CsToggleButton, CsToggleButtonGroup, PricingPlan } from '../customComponents';
 import '../styles.css';
 
-function Pricing() {
-  const [plan, setPlan] = React.useState('/mo');
+interface Plan {
+  title: string;
+  subtitle: string;
+  price: number;
+  discount: number;
+  features: string[];
+  buttonLabel: string;
+  highlight: boolean;
+}
 
-  const plans = [
+const Pricing: React.FC = () => {
+  const [plan, setPlan] = React.useState<string>('/mo');
+
+  const plans: Plan[] = [
     {
       title: 'Basic',
       subtitle: 'Ideal for individuals',
@@ -36,7 +46,7 @@ function Pricing() {
     },
   ];
 
-  const handlePlanChange = (event, newPlan) => {
+  const handlePlanChange = (event: React.MouseEvent<HTMLElement>, newPlan: string | null) => {
     if (newPlan !== null) {
       setPlan(newPlan);
     }

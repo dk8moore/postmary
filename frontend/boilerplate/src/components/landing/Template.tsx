@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 
-function Template() {
+const Template: React.FC = () => {
   return (
     <Box className="tw-py-8 tw-bg-gray-100">
       <Container>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Grid, Card, CardContent } from '@mui/material';
 
-function SocialProof() {
+const SocialProof: React.FC = () => {
   return (
     <Box className="tw-py-8 tw-bg-white">
       <Container>

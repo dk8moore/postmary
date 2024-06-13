@@ -1,7 +1,7 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, PaletteColorOptions } from '@mui/material/styles';
 import designTokens from '../designTokens';
 
-const augmentColor = (mainColor) => {
+const augmentColor = (mainColor: string): PaletteColorOptions => {
   return createTheme({
     palette: {
       primary: { main: mainColor, contrastText: '#ffffff' },

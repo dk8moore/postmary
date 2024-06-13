@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Grid } from '@mui/material';
 
-function Features() {
+const Features: React.FC = () => {
   return (
     <Box className="tw-py-8 tw-bg-gray-100">
       <Container>

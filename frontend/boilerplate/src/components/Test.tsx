@@ -7,9 +7,9 @@ import Checkout from './payments/Checkout';
 import Success from './payments/Success';
 import Cancel from './payments/Cancel';
 
-import './styles.css'
+import './styles.css';
 
-const Test = () => {
+const Test: React.FC = () => {
     const isAuthenticated = true;
 
     return (
@@ -19,9 +19,9 @@ const Test = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/users" element={<Users isAuthenticated={isAuthenticated} />} />
                     <Route path="/notifications" element={<Notifications />} />
-                    <Route path="/checkout" element={<Checkout/>} />
-                    <Route path="/success" element={<Success/>} />
-                    <Route path="/cancel" element={<Cancel/>} />
+                    <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/success" element={<Success />} />
+                    <Route path="/cancel" element={<Cancel />} />
                 </Routes>
             </div>
         </Router>
