@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import api from '../api';
+import api from 'src/api/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface User {

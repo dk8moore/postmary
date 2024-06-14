@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Grid } from '@mui/material';
-import { CsToggleButton, CsToggleButtonGroup, PricingPlan } from '../customComponents';
-import '../styles.css';
+import { CsToggleButton, CsToggleButtonGroup, PricingPlan } from 'src/components/common/customComponents';
+import 'src/assets/styles/styles.css';
 
 interface Plan {
   title: string;

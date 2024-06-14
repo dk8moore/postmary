@@ -1,4 +1,4 @@
-const designTokens = require('./src/designTokens');
+const designTokens = require('./src/assets/designTokens');
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
