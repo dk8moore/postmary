@@ -87,6 +87,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 ## Usage
 
 - **Clean project**: `make clean`
+- **Clean frontend**: `make fe-clean`
 - **Run migrations**: `make migrate`
 - **Start the backend server**: `make run`
 - **Start the frontend server**: `make fe-run`
