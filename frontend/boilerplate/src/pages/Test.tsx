@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from '@/src/pages/Login';
-import Users from './Users';
+import Login from 'src/pages/Login';
+import Users from 'src/pages/Users';
 import Notifications from 'src/components/notifications/Notifications';
-import Checkout from '@/src/pages/Checkout';
-import Success from '@/src/pages/Success';
-import Cancel from '@/src/pages/Cancel';
+import Checkout from 'src/pages/Checkout';
+import Success from 'src/pages/Success';
+import Cancel from 'src/pages/Cancel';
 
-import './styles.css';
+import 'src/assets/styles/styles.css';
 
 const Test: React.FC = () => {
     const isAuthenticated = true;
