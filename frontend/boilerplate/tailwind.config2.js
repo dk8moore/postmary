@@ -1,19 +1,34 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
+const designTokens = require('./src/assets/designTokens');
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
-  content: ["./src/app/**/*.{ts,tsx}", ".src/components/**/*.{ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}",],
+  prefix: 'tw-', // Ensures no conflict with MUI classes
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // Include all relevant paths
+    "app/**/*.{ts,tsx}", // Add paths from shadcn/ui setup
+    "components/**/*.{ts,tsx}" // Add paths from shadcn/ui setup
+  ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       colors: {
+        primary: designTokens.colors.primary,
+        secondary: designTokens.colors.secondary,
+        soft: designTokens.colors.soft,
+        error: designTokens.colors.error,
+        success: designTokens.colors.success,
+        info: designTokens.colors.info,
+        warning: designTokens.colors.warning,
+        backgroundDefault: designTokens.colors.backgroundDefault,
+        backgroundPaper: designTokens.colors.backgroundPaper,
+        textPrimary: designTokens.colors.textPrimary,
+        textSecondary: designTokens.colors.textSecondary,
+        divider: designTokens.colors.divider,
+        upvote: designTokens.colors.upvote,
+        downvote: designTokens.colors.downvote,
+        containerPrimary: designTokens.colors.containerPrimary,
+        containerSecondary: designTokens.colors.containerSecondary,
+
+        // Add colors from shadcn/ui setup
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -57,8 +72,8 @@ module.exports = {
         primary: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
         secondary: ['Lato', 'sans-serif'],
 
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        // Add font family from shadcn/ui setup
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
@@ -76,5 +91,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [
+    require("tailwindcss-animate"), // Add plugin from shadcn/ui setup
+  ],
+};
