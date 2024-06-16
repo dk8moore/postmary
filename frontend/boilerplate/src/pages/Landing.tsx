@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../components/landing/Header';
-import Hero from '../components/landing/Hero';
-import Features from '../components/landing/Features';
-import SocialProof from '../components/landing/Proof';
-import Template from '../components/landing/Template';
-import Pricing from '../components/landing/Pricing';
-import CTA from '../components/landing/CTA';
-import Footer from '../components/landing/Footer';
+import Header from '@landing/Header';
+import Hero from '@landing/Hero';
+import Features from '@landing/Features';
+import SocialProof from '@landing/Proof';
+import Template from '@landing/Template';
+import Pricing from '@landing/Pricing';
+import CTA from '@landing/CTA';
+import Footer from '@landing/Footer';
 
 const LandingPage: React.FC = () => {
   return (

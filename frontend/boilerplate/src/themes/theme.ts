@@ -1,5 +1,5 @@
 import { createTheme, PaletteColorOptions } from '@mui/material/styles';
-import designTokens from '../assets/designTokens';
+import designTokens from '@asset/designTokens';
 
 const augmentColor = (mainColor: string): PaletteColorOptions => {
   return createTheme({

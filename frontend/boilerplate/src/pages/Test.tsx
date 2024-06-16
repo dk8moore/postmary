@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from 'src/pages/Login';
-import Users from 'src/pages/Users';
+import Login from '@page/Login';
+import Users from '@page/Users';
 import Notifications from 'src/components/notifications/Notifications';
-import Checkout from 'src/pages/Checkout';
-import Success from 'src/pages/Success';
-import Cancel from 'src/pages/Cancel';
+import Checkout from '@page/Checkout';
+import Success from '@page/Success';
+import Cancel from '@page/Cancel';
 
 import 'src/assets/styles/styles.css';
 

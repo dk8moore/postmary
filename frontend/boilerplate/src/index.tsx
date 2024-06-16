@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { darkTheme, lightTheme } from './themes/theme';
-import LandingPage from 'src/pages/Landing';
-import { Dashboard } from 'src/pages/Dashboard';
-import reportWebVitals from 'src/reportWebVitals';
+import LandingPage from '@page/Landing';
+import { Dashboard } from '@page/Dashboard';
+import reportWebVitals from '@/reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

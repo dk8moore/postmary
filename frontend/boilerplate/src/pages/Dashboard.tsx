@@ -14,15 +14,15 @@ import {
   Users,
 } from "lucide-react"
 
-import { Badge } from "src/components/ui/badge"
-import { Button } from "src/components/ui/button"
+import { Badge } from "@ui/badge"
+import { Button } from "@ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "src/components/ui/card"
+} from "@ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,9 +30,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "src/components/ui/dropdown-menu"
-import { Input } from "src/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "src/components/ui/sheet"
+} from "@ui/dropdown-menu"
+import { Input } from "@ui/input"
+import { Sheet, SheetContent, SheetTrigger } from "@ui/sheet"
 
 export function Dashboard() {
   return (
