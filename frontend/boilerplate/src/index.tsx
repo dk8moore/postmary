@@ -1,30 +1,26 @@
-// index.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
-import '@style/index.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { darkTheme, lightTheme } from './themes/theme';
-import ExampleRoutes from '@page/examples/example';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { ThemeProvider } from "@/components/theme-provider";
+import LandingPage from "@page/landing/Landing";
+import ExampleRoutes from '@page/app/examples/example';
 import reportWebVitals from '@/reportWebVitals';
+
+import "@style/main.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   <React.StrictMode>
-    {/* <ThemeProvider theme={lightTheme}>
-      <CssBaseline />
+    <ThemeProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/*" element={<LandingPage />} />
+          <Route path="/app/*" element={<ExampleRoutes />} />
         </Routes>
       </Router>
-    </ThemeProvider> */}
-    <Router>
-      <ExampleRoutes />
-    </Router>
+    </ ThemeProvider>
   </React.StrictMode>
 );
 

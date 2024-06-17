@@ -3,8 +3,10 @@ module.exports = {
   webpack: {
     alias: {
         '@': path.resolve(__dirname, 'src'),
+        '@app': path.resolve(__dirname, 'src/components/app'),
         '@asset': path.resolve(__dirname, 'src/assets'),   
         '@common': path.resolve(__dirname, 'src/components/common'),
+        '@image': path.resolve(__dirname, 'src/assets/images'),   
         '@landing': path.resolve(__dirname, 'src/components/landing'),
         '@lib': path.resolve(__dirname, 'src/lib'),
         '@page': path.resolve(__dirname, 'src/pages'),

@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { TooltipProvider } from '@ui/tooltip';
-import { Dashboard as Dashboard1 } from '@page/examples/dashboard-1';
-import { Dashboard as Dashboard2 } from '@page/examples/dashboard-2';
-import { Dashboard as Dashboard3 } from '@page/examples/dashboard-3';
-import { Dashboard as Dashboard4 } from '@page/examples/dashboard-4';
-import { Dashboard as Dashboard5 } from '@page/examples/dashboard-5';
-import { Dashboard as Dashboard6 } from '@page/examples/dashboard-6';
-import { Dashboard as Dashboard7 } from '@page/examples/dashboard-7';
-import { LoginForm as LoginForm1 } from '@page/examples/authentication-1';
-import { LoginForm as LoginForm2 } from '@page/examples/authentication-2';
-import { LoginForm as LoginForm3 } from '@page/examples/authentication-3';
-import { LoginForm as LoginForm4 } from '@page/examples/authentication-4';
+import { Dashboard as Dashboard1 } from '@page/app/examples/dashboard-1';
+import { Dashboard as Dashboard2 } from '@page/app/examples/dashboard-2';
+import { Dashboard as Dashboard3 } from '@page/app/examples/dashboard-3';
+import { Dashboard as Dashboard4 } from '@page/app/examples/dashboard-4';
+import { Dashboard as Dashboard5 } from '@page/app/examples/dashboard-5';
+import { Dashboard as Dashboard6 } from '@page/app/examples/dashboard-6';
+import { Dashboard as Dashboard7 } from '@page/app/examples/dashboard-7';
+import { LoginForm as LoginForm1 } from '@page/app/examples/authentication-1';
+import { LoginForm as LoginForm2 } from '@page/app/examples/authentication-2';
+import { LoginForm as LoginForm3 } from '@page/app/examples/authentication-3';
+import { LoginForm as LoginForm4 } from '@page/app/examples/authentication-4';
 
 const ExampleRoutes: React.FC = () => {
   return (
