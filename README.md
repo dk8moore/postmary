@@ -1,4 +1,4 @@
-# Django SaaS Boilerplate
+# Django + React SaaS Boilerplate
 
 This project is a boilerplate for building SaaS applications with Django and React, featuring real-time notifications using Django Channels and WebSockets.
 
