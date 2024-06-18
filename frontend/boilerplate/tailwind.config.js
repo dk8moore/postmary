@@ -58,11 +58,20 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        primary: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-        secondary: ['Lato', 'sans-serif'],
 
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ['Geist Sans', ...fontFamily.sans],
+        // mono: ['var(--font-geist-mono)'],
+      },
+      fontWeight: {
+        thin: 100,
+        extralight: 200,
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        black: 900,
       },
       keyframes: {
         "accordion-down": {
