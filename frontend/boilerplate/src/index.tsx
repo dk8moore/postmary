@@ -7,7 +7,7 @@ import LandingPage from "@page/landing/Landing";
 import ExampleRoutes from '@page/app/examples/example';
 import reportWebVitals from '@/reportWebVitals';
 
-import "@style/main.css";
+import "@style/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

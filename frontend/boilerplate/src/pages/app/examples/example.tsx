@@ -12,6 +12,7 @@ import { LoginForm as LoginForm1 } from '@page/app/examples/authentication-1';
 import { LoginForm as LoginForm2 } from '@page/app/examples/authentication-2';
 import { LoginForm as LoginForm3 } from '@page/app/examples/authentication-3';
 import { LoginForm as LoginForm4 } from '@page/app/examples/authentication-4';
+import "@style/app.css";
 
 const ExampleRoutes: React.FC = () => {
   return (

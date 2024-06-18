@@ -19,6 +19,7 @@
         "@notification/*": ["src/components/notifications/*"],
         "@page/*": ["src/pages/*"],
         "@style/*": ["src/assets/styles/*"],
+        "@theme/*": ["src/assets/styles/themes/*"],
         "@ui/*": ["src/components/ui/*"],
       }
     },

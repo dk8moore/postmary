@@ -15,7 +15,7 @@ import { Services } from '@landing/Services';
 import { Sponsors } from '@landing/Sponsors';
 import { Team } from '@landing/Team';
 import { Testimonials } from '@landing/Testimonials';
-import '@style/App.css';
+import '@style/landing.css';
 
 function LandingPage() {
   return (
