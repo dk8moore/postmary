@@ -45,7 +45,7 @@ const pricingList: PricingProps[] = [
   {
     title: "Premium",
     popular: 1,
-    price: 5,
+    price: 10,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Start Free Trial",
@@ -60,7 +60,7 @@ const pricingList: PricingProps[] = [
   {
     title: "Enterprise",
     popular: 0,
-    price: 40,
+    price: 25,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Contact US",
@@ -84,9 +84,9 @@ export const Pricing = () => {
         Get
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          unlimited{" "}
         </span>
-        Access
+        access
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias

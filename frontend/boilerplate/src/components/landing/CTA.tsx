@@ -11,12 +11,12 @@ export const Cta = () => {
       <div className="container lg:grid lg:grid-cols-2 place-items-center">
         <div className="lg:col-start-1">
           <h2 className="text-3xl md:text-4xl font-bold ">
-            All Your
+            All you need to build your
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               {" "}
-              Ideas & Concepts{" "}
+              project{" "}
             </span>
-            In One Interface
+            in one place
           </h2>
           <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,

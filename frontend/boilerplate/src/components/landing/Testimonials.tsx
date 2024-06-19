@@ -18,44 +18,44 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
+    image: "https://bxlimages.blob.core.windows.net/avatar-cache/36206-avatar.png",
+    name: "Michael Scott",
+    userName: "@m.g.scott",
     comment: "This landing page is awesome!",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
+    image: "https://bxlimages.blob.core.windows.net/avatar-cache/36206-avatar.png",
+    name: "Michael Scarn",
+    userName: "@m.g.scott1",
     comment:
       "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
   },
 
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
+    image: "https://bxlimages.blob.core.windows.net/avatar-cache/36206-avatar.png",
+    name: "Date Mike",
+    userName: "@m.g.scott2",
     comment:
       "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    image: "https://bxlimages.blob.core.windows.net/avatar-cache/36206-avatar.png",
+    name: "Prison Mike",
+    userName: "@m.g.scott3",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    image: "https://bxlimages.blob.core.windows.net/avatar-cache/36206-avatar.png",
+    name: "Mykonos",
+    userName: "@m.g.scott4",
     comment:
       "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
+    image: "https://bxlimages.blob.core.windows.net/avatar-cache/36206-avatar.png",
+    name: "Michael Klump",
+    userName: "@m.g.scott5",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -68,12 +68,12 @@ export const Testimonials = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        What do
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          people{" "}
         </span>
-        This Landing Page
+        say about it?
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">

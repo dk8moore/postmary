@@ -25,9 +25,9 @@ interface SocialNetworksProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    imageUrl: "https://i.pravatar.cc/150?img=15",
+    name: "Pam Beesly",
+    position: "Sales Manager",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -41,9 +41,9 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    imageUrl: "https://i.pravatar.cc/150?img=69",
+    name: "Jim Halpert",
+    position: "Tech Lead Athlead",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -57,9 +57,9 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    imageUrl: "https://i.pravatar.cc/150?img=22",
+    name: "Angela Martin",
+    position: "Grumpy Cat Woman",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
 
@@ -70,9 +70,9 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    imageUrl: "https://i.pravatar.cc/150?img=11",
+    name: "Dwight Schrute",
+    position: "Assistant Regional Manager",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -103,10 +103,11 @@ export const Team = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
+        Meet our{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          awesome{" "}
         </span>
-        Crew
+        team
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
