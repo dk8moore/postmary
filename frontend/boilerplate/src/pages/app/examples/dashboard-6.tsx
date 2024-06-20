@@ -245,7 +245,7 @@ export function Dashboard() {
                 className="overflow-hidden rounded-full"
               >
                 <img
-                  src="/placeholder-user.jpg"
+                  src="https://picsum.photos/36"
                   width={36}
                   height={36}
                   alt="Avatar"
@@ -348,7 +348,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square rounded-md object-cover"
                             height="64"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/64"
                             width="64"
                           />
                         </TableCell>
@@ -393,7 +393,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square rounded-md object-cover"
                             height="64"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/64"
                             width="64"
                           />
                         </TableCell>
@@ -438,7 +438,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square rounded-md object-cover"
                             height="64"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/64"
                             width="64"
                           />
                         </TableCell>
@@ -483,7 +483,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square rounded-md object-cover"
                             height="64"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/64"
                             width="64"
                           />
                         </TableCell>
@@ -528,7 +528,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square rounded-md object-cover"
                             height="64"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/64"
                             width="64"
                           />
                         </TableCell>
@@ -573,7 +573,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square rounded-md object-cover"
                             height="64"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/64"
                             width="64"
                           />
                         </TableCell>

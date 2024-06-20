@@ -55,7 +55,7 @@ export function LoginForm() {
       </div>
       <div className="hidden bg-muted lg:block">
         <img
-          src="/placeholder.svg"
+          src="https://picsum.photos/1920/1080"
           alt="Image"
           width="1920"
           height="1080"

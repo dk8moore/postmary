@@ -256,7 +256,7 @@ export function Dashboard() {
                 className="overflow-hidden rounded-full"
               >
                 <img
-                  src="/placeholder-user.jpg"
+                  src="https://picsum.photos/36/36"
                   width={36}
                   height={36}
                   alt="Avatar"

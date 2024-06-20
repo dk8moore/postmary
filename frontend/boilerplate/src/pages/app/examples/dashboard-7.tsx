@@ -250,7 +250,7 @@ export function Dashboard() {
                 className="overflow-hidden rounded-full"
               >
                 <img
-                  src="/placeholder-user.jpg"
+                  src="https://picsum.photos/36"
                   width={36}
                   height={36}
                   alt="Avatar"
@@ -543,7 +543,7 @@ export function Dashboard() {
                         alt="Product image"
                         className="aspect-square w-full rounded-md object-cover"
                         height="300"
-                        src="/placeholder.svg"
+                        src="https://picsum.photos/300"
                         width="300"
                       />
                       <div className="grid grid-cols-3 gap-2">
@@ -552,7 +552,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square w-full rounded-md object-cover"
                             height="84"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/84"
                             width="84"
                           />
                         </button>
@@ -561,7 +561,7 @@ export function Dashboard() {
                             alt="Product image"
                             className="aspect-square w-full rounded-md object-cover"
                             height="84"
-                            src="/placeholder.svg"
+                            src="https://picsum.photos/84"
                             width="84"
                           />
                         </button>
