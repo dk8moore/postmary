@@ -4,7 +4,7 @@ const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenCo
 const svgToDataUri = require("mini-svg-data-uri");
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--ace-${key}`, val])
@@ -16,7 +16,7 @@ function addVariablesForColors({ addBase, theme }: any) {
 }
 
 // Function to generate pattern background utilities => from Aceternity UI -> https://ui.aceternity.com/components/grid-and-dot-backgrounds
-function generatePatternBackgroundUtilities({ matchUtilities, theme }: any) {
+function generatePatternBackgroundUtilities({ matchUtilities, theme }) {
   matchUtilities(
     {
       "bg-grid": (value) => ({
