@@ -8,6 +8,7 @@ import ExampleRoutes from '@page/app/examples/example';
 import reportWebVitals from '@/reportWebVitals';
 
 import "@style/index.css";
+import AppRoutes from '@page/app/app';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -17,7 +18,8 @@ root.render(
       <Router>
         <Routes>
           <Route path="/*" element={<LandingPage />} />
-          <Route path="/app/*" element={<ExampleRoutes />} />
+          <Route path="/app/*" element={<AppRoutes />} />
+          <Route path="/eg/*" element={<ExampleRoutes />} />
         </Routes>
       </Router>
     </ ThemeProvider>

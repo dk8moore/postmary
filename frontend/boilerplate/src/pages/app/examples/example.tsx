@@ -12,7 +12,6 @@ import { LoginForm as LoginForm1 } from '@page/app/examples/authentication-1';
 import { LoginForm as LoginForm2 } from '@page/app/examples/authentication-2';
 import { LoginForm as LoginForm3 } from '@page/app/examples/authentication-3';
 import { LoginForm as LoginForm4 } from '@page/app/examples/authentication-4';
-import { LoginForm as LoginForm5 } from '@page/app/examples/authentication-5';
 import "@style/app.css";
 
 const ExampleRoutes: React.FC = () => {
@@ -22,7 +21,6 @@ const ExampleRoutes: React.FC = () => {
       <Route path="/a2" element={<LoginForm2 />} />
       <Route path="/a3" element={<LoginForm3 />} />
       <Route path="/a4" element={<LoginForm4 />} />
-      <Route path="/a5" element={<LoginForm5 />} />
       <Route path="/d1" element={<Dashboard1 />} />
       <Route path="/d2" element={<Dashboard2 />} />
       <Route path="/d3" element={<TooltipProvider><Dashboard3 /></TooltipProvider>} />
