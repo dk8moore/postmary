@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Button } from '@ui/button';
 import { buttonVariants } from '@ui/button';
@@ -30,7 +31,9 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+          <Link to="/app/login" className="w-full md:w-1/3">
+            <Button className="w-full md:w-1/3">Get Started</Button>
+          </Link>
 
           <a
             rel="noreferrer noopener"
