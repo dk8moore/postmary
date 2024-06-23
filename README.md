@@ -102,3 +102,34 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 - **Frontend**: React application setup for dynamic user interfaces, styled with Tailwind CSS.
 - **Payment Integration**: Stripe integration for payment processing.
 <!-- - **Deployment**: Docker configuration for easy deployment. -->
+
+## Development Workflow
+
+This section outlines the process for using this boilerplate in new projects and contributing improvements back to the boilerplate.
+
+1. **Fork the boilerplate**:
+   - Create a new repository for your project.
+   - Fork this boilerplate repository into your new project repository.
+
+2. **Create branches**:
+   - `root` branch: This will contain modifications that could benefit the boilerplate itself.
+   - `proj` branch: This will contain project-specific modifications.
+
+3. **Development process**:
+   - For project-specific features:
+     - Work in the `proj` branch.
+     - Merge `proj` into `root` when features are stable.
+   - For boilerplate improvements:
+     - Work directly in the `root` branch.
+     - Keep these changes separate from project-specific code.
+
+4. **Contributing back to the boilerplate**:
+   - Once you have made improvements in the `root` branch that could benefit the boilerplate:
+     - Create a pull request from your project's `root` branch to the original boilerplate repository.
+     - Ensure that the changes are general and not specific to your project.
+
+5. **Updating your project with boilerplate changes**:
+   - Periodically pull updates from the original boilerplate repository into your project's `root` branch.
+   - Merge these updates into your `proj` branch as needed.
+
+By following this workflow, you can maintain a clear separation between project-specific code and boilerplate improvements, making it easier to contribute back to the boilerplate while developing your specific project.
