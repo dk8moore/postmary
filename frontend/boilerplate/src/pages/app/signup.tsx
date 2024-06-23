@@ -34,19 +34,19 @@ export function SignUpForm() {
                                 Enter your information to create an account
                             </p>
                         </div>
-                        <div className="mt-8 space-y-4">
-                            <Button variant="outline" className="items-center justify-center space-x-2 w-full">
+                        <div className="mt-12">
+                            <Button variant="outline" className="items-center justify-center space-x-2 w-full mb-4">
                                 <SiGoogle />
-                                <span className="hidden sm:inline">Sign up with Google</span>
+                                <span className="sm:inline">Sign up with Google</span>
                             </Button>
-                            <Button variant="outline" className="items-center justify-center space-x-2 w-full">
+                            <Button variant="outline" className="items-center justify-center space-x-2 w-full mb-4">
                                 <SiFacebook />
-                                <span className="hidden sm:inline">Sign up with Facebook</span>
+                                <span className="sm:inline">Sign up with Facebook</span>
                             </Button>
                             <Separator>
                                 <Label className="font-light text-gray-400">OR</Label>
                             </Separator>
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 gap-4 mt-3">
                                 <div className="space-y-2">
                                     <Label htmlFor="first-name">First name</Label>
                                     <Input id="first-name" placeholder="Michael" required />
@@ -56,7 +56,7 @@ export function SignUpForm() {
                                     <Input id="last-name" placeholder="Scott" required />
                                 </div>
                             </div>
-                            <div className="space-y-2">
+                            <div className="space-y-2 mt-3">
                                 <Label htmlFor="email">Email</Label>
                                 <Input
                                     id="email"
@@ -65,11 +65,7 @@ export function SignUpForm() {
                                     required
                                 />
                             </div>
-                            <div className="space-y-2">
-                                <Label htmlFor="password">Password</Label>
-                                <Input id="password" type="password" required />
-                            </div>
-                            <Button type="submit" className="w-full font-bold bg-primary">
+                            <Button type="submit" className="w-full font-bold bg-primary mt-10">
                                 Create an account
                             </Button>
                         </div>
