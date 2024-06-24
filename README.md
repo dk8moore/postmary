@@ -107,29 +107,28 @@ This project is a boilerplate for building SaaS applications with Django and Rea
 
 This section outlines the process for using this boilerplate in new projects and contributing improvements back to the boilerplate.
 
-1. **Fork the boilerplate**:
-   - Create a new repository for your project.
-   - Fork this boilerplate repository into your new project repository.
+1. **Create a new project**:
+   - Use GitHub's "Use this template" feature or manually copy the boilerplate to create a new repository for your project.
 
-2. **Create branches**:
-   - `root` branch: This will contain modifications that could benefit the boilerplate itself.
-   - `proj` branch: This will contain project-specific modifications.
+2. **Development process**:
+   - Work on your project in its own repository.
+   - When you identify potential boilerplate improvements, create a new branch in your project repository to implement and test these improvements.
 
-3. **Development process**:
-   - For project-specific features:
-     - Work in the `proj` branch.
-     - Merge `proj` into `root` when features are stable.
-   - For boilerplate improvements:
-     - Work directly in the `root` branch.
-     - Keep these changes separate from project-specific code.
+3. **Contributing back to the boilerplate**:
+   - Once you have a stable improvement that could benefit the boilerplate:
+     - Create a new branch in the original boilerplate repository.
+     - Implement the improvement in this branch, ensuring it's generalized and not specific to your project.
+     - Create a pull request from this branch to the main branch of the boilerplate repository.
+     - Provide clear documentation and explanation of the improvement in the pull request.
 
-4. **Contributing back to the boilerplate**:
-   - Once you have made improvements in the `root` branch that could benefit the boilerplate:
-     - Create a pull request from your project's `root` branch to the original boilerplate repository.
-     - Ensure that the changes are general and not specific to your project.
+4. **Updating your project with boilerplate changes**:
+   - Periodically pull changes from the boilerplate repository into your project.
+   - Create a new branch in your project repository for integrating these updates.
+   - Merge the boilerplate changes into this branch and resolve any conflicts.
+   - After testing, merge this update branch into your main project branch.
 
-5. **Updating your project with boilerplate changes**:
-   - Periodically pull updates from the original boilerplate repository into your project's `root` branch.
-   - Merge these updates into your `proj` branch as needed.
-
-By following this workflow, you can maintain a clear separation between project-specific code and boilerplate improvements, making it easier to contribute back to the boilerplate while developing your specific project.
+5. **Best practices**:
+   - Keep your project-specific code clearly separated from boilerplate code.
+   - Regularly update your project with the latest boilerplate improvements.
+   - When contributing back to the boilerplate, ensure changes are general and beneficial to most users.
+   - Maintain good communication with the boilerplate maintainers and other contributors.
