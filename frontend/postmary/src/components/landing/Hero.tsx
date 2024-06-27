@@ -14,7 +14,7 @@ export const Hero = () => {
           <h1 className="inline">
             A{" "}
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              boilerplate
+              postmary
             </span>
           </h1>{" "}
           for{" "}

@@ -31,13 +31,13 @@ clean:
 
 fe-install:
 	# Install the required node packages
-	cd frontend/boilerplate && npm install
+	cd frontend/postmary && npm install
 
 fe-run:
 	# Start the React frontend server
-	cd frontend/boilerplate && npm start
+	cd frontend/postmary && npm start
 
 fe-clean:
 	# Remove frontend build artifacts
-	rm -rf frontend/boilerplate/build
-	rm -rf frontend/boilerplate/node_modules
+	rm -rf frontend/postmary/build
+	rm -rf frontend/postmary/node_modules
