@@ -58,13 +58,13 @@ MIDDLEWARE = [
     'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
-ROOT_URLCONF = 'boilerplate.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'boilerplate/templates',
+            BASE_DIR / 'config/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -80,9 +80,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'boilerplate.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
-ASGI_APPLICATION = 'boilerplate.asgi.application'
+ASGI_APPLICATION = 'config.asgi.application'
 
 
 # Database
@@ -137,7 +137,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'boilerplate/static',
+    BASE_DIR / 'config/static',
 ]
 
 # Default primary key field type
