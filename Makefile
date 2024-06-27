@@ -31,13 +31,13 @@ clean:
 
 fe-install:
 	# Install the required node packages
-	cd frontend/boilerplate && npm install
+	cd frontend && npm install
 
 fe-run:
 	# Start the React frontend server
-	cd frontend/boilerplate && npm start
+	cd frontend && npm start
 
 fe-clean:
 	# Remove frontend build artifacts
-	rm -rf frontend/boilerplate/build
-	rm -rf frontend/boilerplate/node_modules
+	rm -rf frontend/build
+	rm -rf frontend/node_modules
