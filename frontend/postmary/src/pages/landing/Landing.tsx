@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { About } from '@landing/About';
-import { Cta } from '@landing/Cta';
+import { Cta } from '@landing/CTA';
 import { FAQ } from '@landing/FAQ';
 import { Features } from '@landing/Features';
 import { Footer } from '@landing/Footer';
