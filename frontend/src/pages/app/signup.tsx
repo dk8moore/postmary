@@ -29,7 +29,7 @@ export function SignUpForm() {
                     </div>
                     <div className="flex flex-col justify-center mx-auto w-full max-w-md p-12">
                         <div className="text-center">
-                            <h4 className="text-2xl font-semibold text-primary-foreground">Create an account</h4>
+                            <h4 className="text-2xl font-semibold text-card-foreground">Create an account</h4>
                             <p className="font-light mt-2 text-gray-400">
                                 Enter your information to create an account
                             </p>

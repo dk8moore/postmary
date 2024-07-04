@@ -29,7 +29,7 @@ export function LoginForm() {
                     </div>
                     <div className="flex flex-col justify-center mx-auto w-full max-w-md p-12">
                         <div className="text-center">
-                            <h4 className="text-2xl font-semibold text-primary-foreground">Welcome back</h4>
+                            <h4 className="text-2xl font-semibold text-card-foreground">Welcome back</h4>
                             <p className="font-light mt-2 text-gray-400">
                                 Sign in to access to your dashboard, settings and projects.
                             </p>
