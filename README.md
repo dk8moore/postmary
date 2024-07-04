@@ -129,9 +129,9 @@ This project uses PostgreSQL as its database. Follow these steps to set up Postg
 7. **Verify connection**:
     After setting up the database and updating the `.env` file, you can proceed with running migrations as described in the setup steps above.
 
-*Ensure that the PostgreSQL service is running before starting your Django application. If you encounter any issues, check the PostgreSQL log files for more information.
+*Ensure that the PostgreSQL service is running before starting your Django application. If you encounter any issues, check the PostgreSQL log files for more information.*
 
-For production environments, it's recommended to use a more secure configuration. Consult the Django documentation on databases for best practices.*
+*For production environments, it's recommended to use a more secure configuration. Consult the Django documentation on databases for best practices.*
 
 ## Usage
 
