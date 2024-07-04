@@ -33,7 +33,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     *If Tailwind CSS is not already set up in your project, you can add it by following the official [Tailwind CSS installation guide](https://tailwindcss.com/docs/installation).*
 
     *Ensure TypeScript is set up correctly*:
-    Make sure the `tsconfig.json` file is present in the frontend root (`frontend/boilerplate/tsconfig.json`) with the following content:
+    Make sure the `tsconfig.json` file is present in the frontend root (`frontend/tsconfig.json`) with the following content:
     ```json
     {
     "compilerOptions": {
@@ -62,7 +62,7 @@ This project is a boilerplate for building SaaS applications with Django and Rea
     STRIPE_SECRET_KEY = 'your-secret-key'
     ```
 
-    Create a `.env` file in the frontend root (`frontend/boilerplate/.env`) and add the necessary environment variables. A typical `.env` file would look like this:
+    Create a `.env` file in the frontend root (`frontend/.env`) and add the necessary environment variables. A typical `.env` file would look like this:
     ```bash
     REACT_APP_STRIPE_PUBLISHABLE_KEY='your-publishable-key'
     REACT_APP_API_URL='http://localhost:8000'
