@@ -1,0 +1,49 @@
+@tailwind base;
+
+/* Modern Minimalistic Theme */
+@layer base {
+    :root {
+        --background: 0 0% 98%;
+        --foreground: 210 15% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 210 15% 15%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 210 15% 15%;
+        --primary: 180 60% 40%; /* Teal */
+        --primary-foreground: 0 0% 100%;
+        --secondary: 200 15% 95%;
+        --secondary-foreground: 210 15% 15%;
+        --muted: 200 15% 95%;
+        --muted-foreground: 210 10% 40%;
+        --accent: 210 60% 50%; /* Complementary Blue */
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 70% 50%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 210 12% 80%;
+        --input: 210 12% 80%;
+        --ring: 180 60% 40%; /* Teal */
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 210 15% 10%;
+        --foreground: 0 0% 95%;
+        --card: 210 15% 15%;
+        --card-foreground: 0 0% 95%;
+        --popover: 210 15% 15%;
+        --popover-foreground: 0 0% 95%;
+        --primary: 180 50% 50%; /* Darker Teal */
+        --primary-foreground: 0 0% 95%;
+        --secondary: 210 10% 30%;
+        --secondary-foreground: 0 0% 95%;
+        --muted: 210 10% 30%;
+        --muted-foreground: 0 0% 70%;
+        --accent: 210 60% 50%; /* Complementary Blue */
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 60% 40%;
+        --destructive-foreground: 0 0% 95%;
+        --border: 210 10% 25%;
+        --input: 210 10% 25%;
+        --ring: 180 50% 50%; /* Darker Teal */
+    }
+}
