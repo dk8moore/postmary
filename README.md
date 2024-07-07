@@ -135,12 +135,19 @@ This project uses PostgreSQL as its database. Follow these steps to set up Postg
 
 ## Usage
 
-- **Clean project**: `make clean`
-- **Clean frontend**: `make fe-clean`
+- **Install backend requirements**: `make install`
+- **Freeze backend requirements**: `make freeze`
 - **Run migrations**: `make migrate`
-- **Start the backend server**: `make run`
-- **Start the frontend server**: `make fe-run`
+- **Clean migrations**: `make clean-migrations`
+- **Reset Django database**: `make reset-db`
+- **Update Django database (keeping data)**: `make update-db`
+- **Update Django cache**: `make clear-cache`
 - **Create superuser for Django admin panel**: `make createsu`
+- **Start the backend server**: `make run`
+- **Clean backend project**: `make clean`
+- **Install frontend requirements**: `make fe-install`
+- **Start the frontend server**: `make fe-run`
+- **Clean frontend project**: `make fe-clean`
 
 ## Features
 
