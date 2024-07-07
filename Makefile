@@ -18,9 +18,9 @@ migrate:
 	python manage.py migrate
 
 clean-migrations:
-	# Remove Django migrations
-	find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
-	find . -path "*/migrations/*.pyc" -delete
+	# Remove Django migrations, but only for the project apps
+	find . -path "*/migrations/*.py" -not -name "__init__.py" -not -path "*/site-packages/*" -delete
+	find . -path "*/migrations/*.pyc" -not -path "*/site-packages/*" -delete
 
 reset-db:
 	# Reset the Django database
