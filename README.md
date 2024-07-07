@@ -148,6 +148,8 @@ This project uses PostgreSQL as its database. Follow these steps to set up Postg
 - **Install frontend requirements**: `make fe-install`
 - **Start the frontend server**: `make fe-run`
 - **Clean frontend project**: `make fe-clean`
+- **Set up boilerplate remote**: `make bp-remote`
+- **Update from boilerplate**: `make bp-pull`
 
 ## Features
 
@@ -165,10 +167,25 @@ This section outlines the process for using this boilerplate in new projects and
 
 1. **Create a new project**:
    - Use GitHub's "Use this template" feature or manually copy the boilerplate to create a new repository for your project.
+   - After creating your new project, set up the boilerplate as remote:
+    ```bash
+    make bp-remote
+    ```
 
 2. **Development process**:
    - Work on your project in its own repository.
    - When you identify potential boilerplate improvements, create a new branch in your project repository to implement and test these improvements.
+
+4. **Updating your project with boilerplate changes**:
+   - Periodically update your project with the latest boilerplate changes:
+    ```bash
+    make bp-pull
+    ```
+    This command will:
+        - Prompt for confirmation before proceeding
+        - Fetch the latest changes from the boilerplate
+        - Attempt to merge the boilerplate changes
+    If conflicts occur during the merge, you'll need to resolve them manually.
 
 3. **Contributing back to the boilerplate**:
    - Once you have a stable improvement that could benefit the boilerplate:
@@ -177,14 +194,10 @@ This section outlines the process for using this boilerplate in new projects and
      - Create a pull request from this branch to the main branch of the boilerplate repository.
      - Provide clear documentation and explanation of the improvement in the pull request.
 
-4. **Updating your project with boilerplate changes**:
-   - Periodically pull changes from the boilerplate repository into your project.
-   - Create a new branch in your project repository for integrating these updates.
-   - Merge the boilerplate changes into this branch and resolve any conflicts.
-   - After testing, merge this update branch into your main project branch.
-
 5. **Best practices**:
    - Keep your project-specific code clearly separated from boilerplate code.
    - Regularly update your project with the latest boilerplate improvements.
    - When contributing back to the boilerplate, ensure changes are general and beneficial to most users.
-   - Maintain good communication with the boilerplate maintainers and other contributors.
+   - Always review changes carefully when updating from the boilerplate, especially if you've made significant modifications to your project.
+   - Consider using git hooks or CI/CD pipelines to automate testing after updating from the boilerplate.
+   - Make sure to commit or stash your changes before running `make bp-pull`
