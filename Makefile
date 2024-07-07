@@ -1,6 +1,6 @@
 # Makefile for Django project
 
-.PHONY: help install freeze migrate clean-migrations reset-db update-db clear-cache createsu run clean fe-install fe-run fe-clean bp-remote bp-pull
+.PHONY: help install freeze migrate clean-migrations reset-db update-db clear-cache createsu run clean fe-install fe-run fe-clean bp-remote bp-pull tree
 
 # Backend setup
 
@@ -81,3 +81,9 @@ bp-pull:
 	@echo "Attempting to merge Boilerplate changes..."
 	git merge boilerplate/main --allow-unrelated-histories
 	@echo "Update from Boilerplate completed successfully."
+
+# Other
+
+tree:
+	# Print the directory tree to a file
+	tree -a -I '.venv|venv|__pycache__|node_modules|.git' --dirsfirst > tree.txt

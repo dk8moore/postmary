@@ -43,6 +43,6 @@ $RECYCLE.BIN/
 # PostgreSQL
 *.sql
 
-# LLM utilities
-index.txt
-infrastructure.txt
+# Other
+tree.txt
+desc.txt
