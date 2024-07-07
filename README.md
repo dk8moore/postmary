@@ -182,9 +182,9 @@ This section outlines the process for using this boilerplate in new projects and
     make bp-pull
     ```
     This command will:
-        - Prompt for confirmation before proceeding
-        - Fetch the latest changes from the boilerplate
-        - Attempt to merge the boilerplate changes
+      - Prompt for confirmation before proceeding
+      - Fetch the latest changes from the boilerplate
+      - Attempt to merge the boilerplate changes
     If conflicts occur during the merge, you'll need to resolve them manually.
 
 3. **Contributing back to the boilerplate**:
