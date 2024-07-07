@@ -42,3 +42,7 @@ $RECYCLE.BIN/
 
 # PostgreSQL
 *.sql
+
+# Other
+tree.txt
+desc.txt

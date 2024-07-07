@@ -150,6 +150,7 @@ This project uses PostgreSQL as its database. Follow these steps to set up Postg
 - **Clean frontend project**: `make fe-clean`
 - **Set up boilerplate remote**: `make bp-remote`
 - **Update from boilerplate**: `make bp-pull`
+- **Print tree structure to file**: `make tree`
 
 ## Features
 
