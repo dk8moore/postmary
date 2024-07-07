@@ -167,20 +167,14 @@ This section outlines the process for using this boilerplate in new projects and
 
 1. **Create a new project**:
    - Use GitHub's "Use this template" feature or manually copy the boilerplate to create a new repository for your project.
-   - After creating your new project, set up the boilerplate as remote:
-    ```bash
-    make bp-remote
-    ```
+   - After creating your new project, set up the boilerplate as remote: `make bp-remote`
 
 2. **Development process**:
    - Work on your project in its own repository.
    - When you identify potential boilerplate improvements, create a new branch in your project repository to implement and test these improvements.
 
 4. **Updating your project with boilerplate changes**:
-   - Periodically update your project with the latest boilerplate changes:
-    ```bash
-    make bp-pull
-    ```
+   - Periodically update your project with the latest boilerplate changes: `make bp-pull`
     This command will:
       - Prompt for confirmation before proceeding
       - Fetch the latest changes from the boilerplate
